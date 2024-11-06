@@ -1,0 +1,48 @@
+.Block {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 20px;
+}
+
+.Block_Input_Style {
+  height: 50px;
+  width: 300px;
+
+  padding-left: 10px;
+  background: rosybrown;
+
+  border-radius: 10px;
+  border: 2px solid #ff9191;
+  box-shadow: 0 0 15px rgb(255, 147, 147);
+  color: #ffffff;
+}
+
+.Block_Input_Style::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.Block_Input_Style:focus {
+  background: rgb(212, 172, 172);
+  border-color: #ff9191;
+  color: #ffffff;
+  
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.Block_Response {
+  display: flex;
+  gap: 5px;
+}
+
+.Block_Response_Num {
+  color: red;
+  font-size: 100%;
+  font-weight: bold;
+}
